@@ -1,0 +1,145 @@
+.cart-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cart-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.select-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px; /* 체크박스와 상품 이미지/정보 사이의 간격 */
+  flex-shrink: 0; /* 이 요소의 크기가 줄어들지 않도록 합니다. */
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+.cart-item-price {
+  color: #d9230f;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.cart-item-quantity {
+  width: 60px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.cart-item-total {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cart-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.select-all-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.select-all-input {
+  width: 20px;
+  height: 20px;
+} 
+
+.remove-selected-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.remove-selected-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-footer-total {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.checkout-btn {
+  margin-left: 20px;
+  padding: 12px 30px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.checkout-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

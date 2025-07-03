@@ -1,0 +1,53 @@
+/* src/pages/admin/AdminLayout.css */
+.admin-wrapper {
+  display: flex;
+  min-height: 80vh; /* 마이페이지와 동일 */
+  background-color: #fafafa; /* 마이페이지와 동일 */
+}
+
+.admin-sidebar {
+  width: 200px; /* 마이페이지와 동일 */
+  padding: 20px; /* 마이페이지와 동일 */
+  background-color: #ffffff; /* 마이페이지와 동일 */
+  border-right: 1px solid #ddd; /* 마이페이지와 동일 */
+  color: #333; /* 마이페이지는 어두운 글씨 */
+}
+
+.admin-title {
+  margin-bottom: 20px; /* 마이페이지와 동일 */
+  font-size: 1.2rem; /* 마이페이지와 동일 */
+  font-weight: bold;
+  color: #0070f3; /* 마이페이지와 동일 */
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 10px 0;
+}
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: #333; /* 마이페이지와 동일 */
+  padding: 8px 12px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.admin-sidebar a:hover {
+  background-color: #f5f5f5;
+}
+
+.admin-sidebar a.active {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.admin-main {
+  flex-grow: 1;
+  padding: 30px; /* 마이페이지와 동일 */
+}

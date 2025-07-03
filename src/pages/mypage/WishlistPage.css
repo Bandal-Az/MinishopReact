@@ -1,0 +1,136 @@
+/* 위시리스트 페이지 스타일 */
+.wishlist-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* 제목 스타일 */
+.wishlist-page h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* 로딩 중 스타일 */
+.loading {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 위시리스트 아이템 컨테이너 */
+.wishlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 개별 위시리스트 아이템 */
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  gap: 20px;
+}
+
+/* 체크박스 스타일 */
+.wishlist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* 상품 이미지 스타일 */
+.wishlist-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 상품 정보 */
+.wishlist-item-info {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* 상품 이름 */
+.wishlist-item-info p.product-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* 상품 가격 */
+.wishlist-item-info p.product-price {
+  color: #d9230f;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* 삭제 버튼 */
+.wishlist-item button {
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+/* 하단 바 스타일 */
+.wishlist-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* 전체 선택 체크박스 */
+.wishlist-footer label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.wishlist-footer input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* 선택 삭제 버튼 */
+.wishlist-footer button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+/* 비활성화된 버튼 스타일 */
+.wishlist-footer button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
