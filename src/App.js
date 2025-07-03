@@ -73,6 +73,7 @@ const AppContent = () => {
           <Route path="notifications" element={<NotificationsPage />} />
         </Route>
       </Routes>
+      
     </>
   );
 };

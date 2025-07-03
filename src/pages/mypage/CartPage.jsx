@@ -126,12 +126,12 @@ const CartPage = () => {
               />
               <img
                 src={
-  item.productImageUrl
-    ? item.productImageUrl.startsWith('http')
-      ? item.productImageUrl
-      : `http://localhost:8080${item.productImageUrl}`
-    : 'https://via.placeholder.com/150' // 기본 이미지 주소
-}
+                      item.productImageUrl
+                        ? item.productImageUrl.startsWith('http')
+                          ? item.productImageUrl
+                          : `http://localhost:8080${item.productImageUrl}`
+                        : 'https://via.placeholder.com/150' // 기본 이미지 주소
+                    }
                 alt={item.productName || item.name || '상품 이미지'}
                 className="cart-item-img"
               />
